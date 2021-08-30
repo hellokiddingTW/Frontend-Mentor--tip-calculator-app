@@ -74,6 +74,10 @@ button:hover {
   display: none;
 }
 
+.outline--warning:focus {
+  outline-color: red;
+}
+
 .subTitle--mb {
   margin-bottom: 16px;
 }
@@ -192,5 +196,9 @@ button:hover {
   margin-top: auto;
   background-color: var(--StrongCyan);
   color: var(--VeryDarkCyan);
+}
+
+.displaySide button:hover {
+  background-color: var(--HoverColorReset);
 }
 /*# sourceMappingURL=style.css.map */

@@ -68,6 +68,12 @@
     display: none;
   }
 
+  .outline--warning{
+    &:focus{
+      outline-color:red
+    }
+  }
+
   .subTitle--mb{
     margin-bottom: 16px;
   }
@@ -165,9 +171,9 @@
       margin-top: auto;
       background-color: var(--StrongCyan);
       color: var(--VeryDarkCyan) ;
-      // &:hover{
-      //   background-color:var(--HoverColorReset)
-      // }
+      &:hover{
+        background-color:var(--HoverColorReset)
+      }
     }
   }
 
