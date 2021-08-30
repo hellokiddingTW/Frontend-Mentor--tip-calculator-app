@@ -1,0 +1,196 @@
+:root {
+  /*  Primary */
+  --StrongCyan: hsl(172, 67%, 45%);
+  /* Neutral  */
+  --VeryDarkCyan: hsl(183, 100%, 15%);
+  --DarkGrayishCyan1: hsl(186, 14%, 43%);
+  --DarkGrayishCyan2: hsl(184, 14%, 56%);
+  --LightGrayishCyan1: hsl(185, 41%, 84%);
+  --LightGrayishCyan2: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --HoverColorReset: hsl(172, 73%, 78%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--LightGrayishCyan1);
+  font-family: 'Space Mono', monospace;
+}
+
+button {
+  background-color: var(--VeryDarkCyan);
+  font-size: 24px;
+  color: var(--White);
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+  border: none;
+  border-radius: .75rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #9ef0e5;
+}
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--VeryDarkCyan);
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: var(--DarkGrayishCyan2);
+  display: inline-block;
+  font-weight: bold;
+}
+
+.subTitle--warning {
+  color: red;
+  margin-left: auto;
+  display: none;
+}
+
+.subTitle--mb {
+  margin-bottom: 16px;
+}
+
+.label--mb {
+  margin-bottom: .25rem;
+}
+
+.cal {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  width: 75%;
+}
+
+.inputSide {
+  width: 50%;
+  padding: 20px;
+}
+
+.inputSide input {
+  width: 100%;
+  padding: 1rem;
+  height: 3rem;
+  border-radius: .75rem;
+  border: none;
+  background-color: var(--LightGrayishCyan2);
+  font-size: 24px;
+  color: var(--VeryDarkCyan);
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+}
+
+.inputSide input:focus {
+  outline-color: var(--StrongCyan);
+}
+
+.inputSide form input {
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+}
+
+.inputSide .member input {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+}
+
+.inputSide .member div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputSide .inputSide__block--mb {
+  margin-bottom: 2rem;
+}
+
+.btnGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.btnGroup input, .btnGroup button {
+  height: 50px;
+}
+
+.displaySide {
+  width: 50%;
+  padding: 3rem;
+  background-color: var(--VeryDarkCyan);
+  border-radius: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.displaySide > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.displaySide > div p {
+  color: #fff;
+}
+
+.displaySide > div span {
+  font-size: 12px;
+  color: var(--DarkGrayishCyan2);
+}
+
+.displaySide > div h2 {
+  font-size: 40px;
+  margin-left: auto;
+  color: var(--StrongCyan);
+}
+
+.displaySide button {
+  margin-top: auto;
+  background-color: var(--StrongCyan);
+  color: var(--VeryDarkCyan);
+}
+/*# sourceMappingURL=style.css.map */

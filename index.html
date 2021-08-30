@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+   
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="title">S P L T<br>T T E R</h1>
+    <div class="cal">
+      <div class="inputSide">
+        <form class="inputSide__block--mb ">
+          <label class="subTitle label--mb" for="bill"> Bill</label>
+          <input type="number"  id="bill" placeholder="0">
+          <span class="moneyIcon"></span>
+        </form>
+        <div class="inputSide__block--mb">
+          <span class="subTitle subTitle--mb">Select Tip %</span>
+          <div class="btnGroup">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="text" value=custom>
+          </div>
+        </div>
+        <div class="member">
+          <div>
+            <label class="subTitle label--mb" for="member"> Number of People</label>
+            <label class="subTitle subTitle--warning" for="member"> Number of People</label>
+          </div>
+          <input type="number" id="member" placeholder="0">
+        </div>
+      </div>
+      <div class="displaySide">
+        <div class="displaySide__amount">
+          <p> Tip Amount <br><span>/ person</span></p>
+          <h2>0.00</h2>
+        </div>
+        <div class="displaySide__total">
+          <p> Total <br><span>/ person</span></p>
+          <h2>231</h2>
+        </div>
+        <button disabled>Reset</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
