@@ -12,6 +12,7 @@ let clickedNow = null
 
 tips.forEach((item, index) => {
     item.addEventListener('click', () => {
+        if(member.classList.contains('outline--warning')) return
         // index == item.getAttribute('data-num')? item.style.backgroundColor = 'red' : item.style.backgroundColor = 'yellow'
         tip = item.getAttribute('data-percent') / 100
         clickedNow = index
@@ -63,6 +64,7 @@ function resetAll(){
     tipAmount.textContent = `$0.00`
     total.textContent = `$0.00`
     changeBGC()
+    showWarning()
 }
 
 customInput.addEventListener('input',()=>{
