@@ -59,7 +59,7 @@ button:hover {
 .title {
   font-size: 16px;
   color: var(--VeryDarkCyan);
-  margin-bottom: 50px;
+  margin: 20px auto;
 }
 
 .subTitle {
@@ -83,18 +83,21 @@ button:hover {
 }
 
 .cal {
-  padding: 24px;
+  padding: 15px;
   background-color: #fff;
   border-radius: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
-  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .inputSide {
-  width: 50%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -113,6 +116,10 @@ button:hover {
 
 .inputSide input:focus {
   outline-color: var(--StrongCyan);
+}
+
+.inputSide .outline--warning:focus {
+  outline-color: red;
 }
 
 .inputSide form input {
@@ -140,8 +147,8 @@ button:hover {
 .btnGroup {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
 }
 
@@ -150,7 +157,7 @@ button:hover {
 }
 
 .displaySide {
-  width: 50%;
+  width: 100%;
   padding: 3rem;
   background-color: var(--VeryDarkCyan);
   border-radius: .75rem;
@@ -192,5 +199,44 @@ button:hover {
   margin-top: auto;
   background-color: var(--StrongCyan);
   color: var(--VeryDarkCyan);
+}
+
+.displaySide button:hover {
+  background-color: var(--HoverColorReset);
+}
+
+.displaySide .disabled {
+  background-color: #7f9c9f;
+  color: var(--VeryDarkCyan);
+  cursor: default;
+}
+
+.displaySide .disabled:hover {
+  background-color: #7f9c9f;
+}
+
+@media (min-width: 576px) {
+  .title {
+    margin: 50px auto;
+  }
+  .cal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+    width: 75%;
+    padding: 24px;
+  }
+  .inputSide {
+    width: 50%;
+  }
+  .btnGroup {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .displaySide {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

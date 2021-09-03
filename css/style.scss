@@ -52,7 +52,7 @@
   .title{
     font-size: 16px;
     color:var(--VeryDarkCyan);
-    margin-bottom: 50px;
+    margin: 20px auto;
   }
 
   .subTitle{
@@ -76,18 +76,20 @@
     margin-bottom: .25rem;
   }
 
+ 
+
 
   .cal {
-    padding: 24px;
+    padding: 15px;
     background-color: #fff;
     border-radius: 24px;
     display: flex;
-    gap:2rem;
-    width: 75%;
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .inputSide {
-    width: 50% ;
+    width: 100% ;
     padding: 20px;
     input{
       width: 100%;
@@ -104,6 +106,11 @@
         outline-color:var(--StrongCyan)
       }
     }
+    .outline--warning{
+      &:focus{
+        outline-color:red
+      }
+     }
     form{
       input{
         background-image: url('../images/icon-dollar.svg');
@@ -130,7 +137,7 @@
 
   .btnGroup{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
     grid-gap: 16px;
     input, button{
       height: 50px;
@@ -138,7 +145,7 @@
   }
 
   .displaySide{
-    width: 50%;
+    width: 100%;
     padding: 3rem;
     background-color: var(--VeryDarkCyan);
     border-radius: .75rem;
@@ -165,11 +172,45 @@
       margin-top: auto;
       background-color: var(--StrongCyan);
       color: var(--VeryDarkCyan) ;
-      // &:hover{
-      //   background-color:var(--HoverColorReset)
-      // }
+      &:hover{
+        background-color:var(--HoverColorReset)
+      }
     }
+    .disabled{
+      background-color:hsl(184, 14%, 56%);
+      color:var(--VeryDarkCyan);
+      cursor:default;
+      &:hover{
+        background-color:hsl(184, 14%, 56%);
+      }
+    }
+  
   }
+
+
+@media(min-width:576px){
+
+.title{
+  margin: 50px auto;
+}
+  .cal{
+    flex-direction: row;
+    gap:2rem;
+    width: 75%;
+    padding: 24px;
+  }
+  .inputSide{
+    width: 50% ;
+  }
+
+  .btnGroup{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+   
+  .displaySide{
+    width: 50%;
+  }
+}
 
 
 
